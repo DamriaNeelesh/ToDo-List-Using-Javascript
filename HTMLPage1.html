@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+    <form>
+        <input type="text" class="todo-input" />
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incompleted">Incompleted</option>
+            </select>
+        </div>
+    </form>
+    <!--Yeh yahan neeche wale mai dimaag ka bhosda ho gya tha just beacuse ki <ul> tag ko empty rakhna tha todolist ke liye-->
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+            <div class="todo">
+                
+                <button>Delete</button>
+                <button>Checked</button>
+            </div>
+   
+        
+    </div>
+  
+
+
+    <script type="text/javascript" src="Script1.js"></script>
+</body>
+</html>
